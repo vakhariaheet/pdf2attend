@@ -1,0 +1,26 @@
+.pdf-container {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px ;
+    overflow: hidden;
+
+	&:hover {
+		.file-info {
+			opacity: 100;
+		}
+	}
+}
+.btn{
+    padding:.5rem 3rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
+    font-size: 1.5rem;
+    &:active{
+        background-color: #ffffff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 10px 0px;
+    }
+}
+.logs-container{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

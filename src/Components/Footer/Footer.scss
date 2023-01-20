@@ -1,0 +1,39 @@
+.footer {
+	height: max-content;
+	width: 100%;
+	background-color: #000;
+	padding: 2rem;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 4rem;
+	.mantra {
+		font-size: 1rem;
+		text-align: center;
+		color: #fff;
+
+		&:last-of-type {
+			position: relative;
+			&::after {
+				content: attr(data-author);
+				display: block;
+				position: relative;
+				left: 80%;
+				font-size: .8rem;
+				opacity: 0.6;
+				width: max-content;
+			}
+		}
+	}
+	.copyright {
+		color: #fff;
+		opacity: 0.5;
+		text-align: center;
+		width: 100%;
+		font-size: .8rem;
+		bottom: 1rem;
+		margin-top: 3rem;
+	}
+}
