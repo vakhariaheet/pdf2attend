@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './OCRPDF.scss';
-import data from '../../data/result.json';
 import { io, Socket } from 'socket.io-client';
 import { Cell, IRoot, IStudentRecord, OCRResponse } from '../../types';
 import { useDispatch, useSelector } from 'react-redux';
@@ -27,7 +26,7 @@ const OCRPDF: React.FC<OCRPDFProps> = () => {
 	const navigate = useNavigate();
 	const createExel = async () => {
 		const tableData: IStudentRecord[] = [];
-		data.forEach((page) => {
+		pdf.ocr.forEach((page) => {
 			page.forEach((row: any) => {
 				let student: IStudentRecord = {
 					'Roll No': '',
