@@ -53,6 +53,7 @@ const GetPDF: React.FC<GetPDFProps> = () => {
 			setLogs((prev) => [...prev, log.data]);
 		});
 		socket?.on('result', (data: OCRResponse) => {
+			console.log("Hello");
 			dispatch(setOCR(data));
 			navigate('/pdf-ocr');
 		});
