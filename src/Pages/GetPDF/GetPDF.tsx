@@ -28,7 +28,7 @@ const GetPDF: React.FC<GetPDFProps> = () => {
 
 	const onUpload = async () => {
 		if (!file) return;
-		if (fileSizeCalculator(file.size) > 5) {
+		if (fileSizeCalculator(file.size) > 50) {
 			setErrorMessage('File size is too large');
 			return;
 		}
